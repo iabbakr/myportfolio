@@ -400,7 +400,6 @@ header {
 .portfolio__item {
     background: var(--color-accent);
     overflow: hidden;
-    border: 1px solid red;
     max-height: 200px;
 
 }
