@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Abubakar's Portfolio</title>
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
-        
         <link rel="stylesheet" href="./css/style.css">
-
     </head>
     <body>
         <header>
@@ -30,161 +28,99 @@
             </nav>
         </header>
         
-        <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
                 Hi, I am <strong>Abubakar Ibrahim</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Front-End Developer</p>
-            <img src="img/ab.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
+            <img src="img/ab.jpg" alt="Abubakar Ibrahim" class="intro__img">
         </section>
         
-        
-        <!-- My services -->
         <section class="my-services" id="services">
             <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
                 <div class="service">
                     <h3>Design</h3>
-                    <p>I strive to create beautiful and intuitive web apps, meaning I design with both aestetics and usability in mind. You will get your designs delivered as Figma files, as websites or both.</p>
-                </div> <!-- / service -->
-                
-               
+                    <p>I strive to create beautiful and intuitive web apps, meaning I design with both aesthetics and usability in mind.</p>
+                </div>
                 <div class="service">
                     <h3>Development</h3>
-                    <p>I am a versatile frontend developer with a speciality in React JS and Tailwind CSS. I also have a solid grip of the fundamentals of web development using HTML, CSS, and JavaScript.</p>
-                </div> <!-- / service -->
-            
-            </div> <!-- / services -->
-            
+                    <p>I am a versatile frontend developer with a speciality in React JS and Tailwind CSS.</p>
+                </div>
+            </div>
             <a href="#work" class="btn">My Projects</a>
         </section>
         
-        
-        <!-- About me -->
         <section class="about-me" id="about">
            <h2 class="section__title section__title--about">Who I am</h2>
            <p class="section__subtitle section__subtitle--about">Front-End Developer and cat lover from Abuja, Nigeria</p>
-           
            <div class="about-me__body">
-               <p>I am a dynamic and results-driven professional operating at the exciting intersection of Cybersecurity and Full-Stack Software Development.
-My academic foundation includes a robust Master of Computer Science (MCS) degree, specializing in Cybersecurity, which equips me with a deep, defensive understanding of system architecture, vulnerability assessment, and threat mitigation. This specialized knowledge ensures that security is not an afterthought, but an integral part of every solution I build.</p>
-               <p>As a Full-Stack Software Developer, I bridge the gap between secure theory and functional execution. My expertise spans both front-end user experience and back-end logic, with a specific focus on developing seamless, high-performance mobile applications using React Native. I thrive on creating clean, efficient code that not only meets complex requirements but also adheres to the highest standards of digital security and performance.
-My mission is to leverage my comprehensive skills—from writing secure code and managing databases to implementing robust security protocols—to build the next generation of resilient and innovative software solutions. <a href="https://elitehubng.com" id="elitehub">Elitehub.ng</a>.</p>
+               <p>I am a dynamic and results-driven professional operating at the intersection of Cybersecurity and Full-Stack Software Development.</p>
+               <p>Specializing in developing seamless, high-performance mobile applications using React Native. <a href="https://elitehubng.com" id="elitehub">Elitehub.ng</a>.</p>
            </div>
-           
            <img src="img/ab.jpg" alt="Abubakar's portrait" class="about-me__img">
         </section>
         
-        <!-- My Work -->
         <section class="my-work" id="work">
             <h2 class="section__title section__title--work">My projects</h2>
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
             
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="https://stalwart-genie-071a5b.netlify.app" class="portfolio__item">
-                    <img src="img/oldagram-square.png" alt="" class="portfolio__img">
-                </a>
+            <div class="tab-controls">
+                <button class="tab-btn" data-id="designs">Designs</button>
+                <button class="tab-btn active" data-id="projects">Projects</button>
+                <button class="tab-btn" data-id="react-native">React Native</button>
+            </div>
 
-                <!-- Portfolio item 02 -->
-                <a href="https://loquacious-kringle-04ae34.netlify.app/" class="portfolio__item">
-                    <img src="img/googleclone.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 03 -->
-                <a href="https://marvelous-melba-d25a54.netlify.app/" class="portfolio__item">
-                    <img src="img/password-generator.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 04 -->
-                <a href="https://fanciful-pasca-9cc9f4.netlify.app/" class="portfolio__item">
-                    <img src="img/scoreboard.jpg" alt="" class="portfolio__img">
-                </a>
+            <div class="portfolio-tabs">
+                <div class="portfolio-content" id="designs">
+                    <p>Design projects coming soon...</p>
+                </div>
 
-                <!-- Portfolio item 05 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/meme-generator.jpg" alt="" class="portfolio__img">
-                </a>
+                <div class="portfolio-content active" id="projects">
+                    <div class="portfolio">
+                        <a href="https://stalwart-genie-071a5b.netlify.app" class="portfolio__item">
+                            <img src="img/oldagram-square.png" alt="" class="portfolio__img">
+                        </a>
+                        <a href="https://loquacious-kringle-04ae34.netlify.app/" class="portfolio__item">
+                            <img src="img/googleclone.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <a href="https://marvelous-melba-d25a54.netlify.app/" class="portfolio__item">
+                            <img src="img/password-generator.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <a href="https://fanciful-pasca-9cc9f4.netlify.app/" class="portfolio__item">
+                            <img src="img/scoreboard.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <a href="https://aesthetic-pegasus-2d8985.netlify.app/" class="portfolio__item">
+                            <img src="img/meme-picker.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <a href="https://tangerine-cobbler-bd5ca6.netlify.app/" class="portfolio__item">
+                            <img src="img/cart.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <a href="https://symphonious-truffle-2ea1d5.netlify.app/" class="portfolio__item">
+                            <img src="img/pro.jpg" alt="" class="portfolio__img">
+                        </a>
+                        <a href="https://leafy-croquembouche-4b60ca.netlify.app/" class="portfolio__item">
+                            <img src="img/twitter-clone.jpg" alt="" class="portfolio__img">
+                        </a>
+                    </div>
+                </div>
 
-                <!-- Portfolio item 07 -->
-                <a href="https://aesthetic-pegasus-2d8985.netlify.app/" class="portfolio__item">
-                    <img src="img/meme-picker.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 08 -->
-                <a href="https://tangerine-cobbler-bd5ca6.netlify.app/" class="portfolio__item">
-                    <img src="img/cart.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 09 -->
-                <a href="https://symphonious-truffle-2ea1d5.netlify.app/" class="portfolio__item">
-                    <img src="img/pro.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 10 -->
-                <a href="https://snazzy-donut-b97b6b.netlify.app/" class="portfolio__item">
-                    <img src="img/booking.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 11 -->
-                <a href="https://stalwart-pie-88cfae.netlify.app/" class="portfolio__item">
-                    <img src="img/blackjack.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 12 -->
-                <a href="https://polite-pastelito-a176f6.netlify.app/" class="portfolio__item">
-                    <img src="img/unitconverter.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 13 -->
-                <a href="https://comforting-vacherin-a5b5da.netlify.app/" class="portfolio__item">
-                    <img src="img/nft-site.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 14 -->
-                <a href="https://leafy-croquembouche-4b60ca.netlify.app/" class="portfolio__item">
-                    <img src="img/twitter-clone.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 15 -->
-                <a href="https://transcendent-entremet-700560.netlify.app/" class="portfolio__item">
-                    <img src="img/learning-journal.jpg" alt="" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio-content" id="react-native">
+                    <p>Mobile App projects coming soon...</p>
+                </div>
             </div>
         </section>
         
-        
-        <!-- Footer -->
         <footer class="footer">
             <a href="mailto:devabu01@gmail.com" class="footer__link">abubakaribrahim603@gmail.com</a>
             <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io/iabbakr">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.instagram.com/iabbakrr/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com/iabbakr">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/iabbakr">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
+                <li class="social-list__item"><a class="social-list__link" href="https://codepen.io/iabbakr"><i class="fab fa-codepen"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/iabbakrr/"><i class="fab fa-instagram"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://twitter.com/iabbakr"><i class="fab fa-twitter"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/iabbakr"><i class="fab fa-github"></i></a></li>
             </ul>
         </footer>
         
-        
         <script src="./js/index.js"></script>
-        
     </body>
 </html>

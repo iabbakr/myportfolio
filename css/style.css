@@ -503,3 +503,64 @@ header {
     text-decoration: none;
 
 }
+
+/* --- Tab Styles --- */
+.tab-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    margin-bottom: 3em;
+    flex-wrap: wrap; /* Allows tabs to stack on small screens */
+}
+
+.tab-btn {
+    background: transparent;
+    border: 2px solid var(--color-accent);
+    color: var(--color-light);
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    font-size: 0.9rem;
+    transition: all 250ms ease-in-out;
+    border-radius: 4px;
+    min-width: 120px;
+}
+
+.tab-btn.active {
+    background: var(--color-accent);
+    color: var(--color-light);
+}
+
+.tab-btn:hover {
+    background: var(--color-accent);
+    opacity: 0.8;
+}
+
+/* Hide content by default */
+.portfolio-content {
+    display: none;
+    animation: fadeIn 0.4s ease-in;
+}
+
+/* Show active content */
+.portfolio-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments for the buttons */
+@media (max-width: 600px) {
+    .tab-controls {
+        gap: 0.25em;
+    }
+    .tab-btn {
+        padding: 0.6em 1em;
+        font-size: 0.8rem;
+        flex: 1 1 auto; /* Tabs grow to fill width on mobile */
+    }
+}
